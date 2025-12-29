@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="extension/icon128.png" alt="KeepIt" width="96">
+</p>
+
 # KeepIt
 
 A privacy-first web page clipper. Save pages from your browser to your own server.
@@ -6,8 +10,8 @@ A privacy-first web page clipper. Save pages from your browser to your own serve
 
 ## How It Works
 
-1. Click the browser extension on any page
-2. Page content is sent to your self-hosted backend
+1. One click on the extension icon saves the current page
+2. Content is sent to your self-hosted backend
 3. Saved as a markdown file you can read anywhere
 
 ## Quick Start
@@ -44,16 +48,23 @@ The server runs on `http://localhost:8000`. Saved pages go to `./data/`.
 3. Click **Load unpacked**
 4. Select the `extension/` folder
 
-### 4. Configure the Extension
+### 4. First Click: Configure
 
-1. Click the KeepIt extension icon in your toolbar
+1. Click the KeepIt icon - settings popup opens (first time only)
 2. Enter your server URL: `http://localhost:8000`
 3. Enter your auth token
-4. Click **Save**
+4. Click **Save & Close**
 
-### 5. Save a Page
+### 5. Save Pages
 
-Navigate to any webpage and click the extension icon, then click **Clip Page**.
+Just click the extension icon. One click = page saved.
+
+Badge feedback:
+- `...` = clipping in progress
+- `✓` = success
+- `✗` = error (check console for details)
+
+**To change settings later:** Right-click the extension icon → "KeepIt Settings"
 
 ## Tailscale Setup (Access from Anywhere)
 
