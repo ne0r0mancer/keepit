@@ -28,3 +28,10 @@ npm-debug.log*
 # Testing
 coverage/
 
+# KeepIt data
+data/
+
+# Python
+venv/
+__pycache__/
+*.pyc
